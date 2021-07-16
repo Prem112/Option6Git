@@ -300,6 +300,90 @@ if guess < mynumber {
 
 
 
+# Push into Git
+
+1. Type `git status` to see what are the files are added or modified.
+
+   ```
+   $ git status
+   On branch main
+   Your branch is up to date with 'origin/main'.
+   
+   Changes not staged for commit:
+     (use "git add <file>..." to update what will be committed)
+     (use "git restore <file>..." to discard changes in working directory)
+           modified:   README.md
+   
+   Untracked files:
+     (use "git add <file>..." to include in what will be committed)
+           Guess_Random_Number.go
+           Guess_Random_Number.py
+   
+   no changes added to commit (use "git add" and/or "git commit -a")
+   ```
+
+   
+
+2. Type `git add .` to add all the modified files.
+
+   ```
+   On branch main
+   Your branch is up to date with 'origin/main'.
+   
+   Changes to be committed:
+     (use "git restore --staged <file>..." to unstage)
+           new file:   Guess_Random_Number.go
+           new file:   Guess_Random_Number.py
+           modified:   README.md
+   ```
+
+   
+
+3. Type`git commit -m "Initial version for Random guessing game"`to create a commit.
+
+   ```
+   $ git commit -m "Initial version for Random guessing game"
+   [main f68570a] Initial version for Random guessing game
+    3 files changed, 394 insertions(+), 2 deletions(-)
+    create mode 100644 Guess_Random_Number.go
+    create mode 100644 Guess_Random_Number.py
+    rewrite README.md (100%)
+   ```
+
+   
+
+4. Type 'git log` to check for local commit created successfully
+
+   ```
+   $ git log -3
+   commit f68570a5fb1d1248237ad2c06c05a4086b5f7828 (HEAD -> main)
+   Author: Prem112 <premstars@gmail.com>
+   Date:   Fri Jul 16 15:12:43 2021 +0800
+   
+       Initial version for Random guessing game
+   
+   commit 6f2b6bc125d07a5765f5fbfae737599202016b74 (origin/main, origin/HEAD)
+   Author: Prem112 <87473677+Prem112@users.noreply.github.com>
+   Date:   Thu Jul 15 18:29:04 2021 +0800
+   
+       Initial commit
+   ```
+
+   
+
+5. Type `git push -u origin main` to push into main branch.
+
+   ```
+   $ git push -u origin main
+   Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+   To https://github.com/Prem112/Option6Git.git
+      6f2b6bc..f68570a  main -> main
+   Branch 'main' set up to track remote branch 'main' from 'origin'.
+   
+   ```
+
+   
+
 # Author
 
 Natchathiram Premkumar
